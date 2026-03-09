@@ -110,7 +110,7 @@ const Login = () => {
             setLoading(true);
 
             const res = await axios.post(
-                "https://hotel-booking-app-2lg2.onrender.com/api/auth/login",
+                "https://hotel-booking-app-do1i.onrender.com/api/auth/login",
                 { email, password }
             );
 

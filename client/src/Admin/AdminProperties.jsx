@@ -84,7 +84,7 @@ const AdminProperties = () => {
 
     try {
       await axios.post(
-        "https://hotel-booking-app-chi.vercel.app/api/properties",
+        "https://hotel-booking-app-2lg2.onrender.com/api/properties",
         data,
         {
           headers: {
@@ -136,7 +136,7 @@ const AdminProperties = () => {
       }
 
       await axios.put(
-        `https://hotel-booking-app-chi.vercel.app/api/properties/${selectedId}`,
+        `https://hotel-booking-app-2lg2.onrender.com/api/properties/${selectedId}`,
         data,
         {
           headers: {
@@ -159,7 +159,7 @@ const AdminProperties = () => {
 
     try {
       await axios.delete(
-        `https://hotel-booking-app-chi.vercel.app/api/properties/${selectedId}`
+        `https://hotel-booking-app-2lg2.onrender.com/api/properties/${selectedId}`
       );
 
       showMessage("Property Deleted Successfully");
@@ -349,7 +349,7 @@ const AdminProperties = () => {
                   <div className="flex flex-col sm:flex-row gap-4">
 
                     <img
-                      src={`https://hotel-booking-app-2lg2.onrender.com/uploads/${p.image}`}
+                      src={`http://localhost:5000/uploads/${p.image}`}
                       alt=""
                       className="w-full sm:w-24 h-24 object-cover rounded-xl"
                     />

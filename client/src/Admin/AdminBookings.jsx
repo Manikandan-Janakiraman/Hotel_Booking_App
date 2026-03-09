@@ -178,7 +178,7 @@ const AdminBookings = () => {
 
   const fetchBookings = async () => {
     try {
-      const res = await axios.get("https://hotel-booking-app-chi.vercel.app/api/bookings");
+      const res = await axios.get("https://hotel-booking-app-2lg2.onrender.com/api/bookings");
       setBookings(res.data);
     } catch (err) {
       showMessage("Failed to fetch bookings", "error");
@@ -187,7 +187,7 @@ const AdminBookings = () => {
 
   const cancelBooking = async (id) => {
     try {
-      await axios.put(`https://hotel-booking-app-chi.vercel.app/api/bookings/${id}/cancel`);
+      await axios.put(`https://hotel-booking-app-2lg2.onrender.com/api/bookings/${id}/cancel`);
       showMessage("Booking Cancelled");
       fetchBookings();
     } catch (err) {

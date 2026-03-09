@@ -7,7 +7,7 @@ const AdminSidebar = () => {
     const [menus, setMenus] = useState([]);
 
     useEffect(() => {
-        axios.get("https://hotel-booking-app-chi.vercel.app/api/menus")
+        axios.get("https://hotel-booking-app-2lg2.onrender.com/api/menus")
             .then(res => setMenus(res.data));
     }, []);
 
