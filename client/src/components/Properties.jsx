@@ -22,7 +22,7 @@ const Properties = () => {
   }, []);
 
   const fetchProperties = async () => {
-    const res = await axios.get("http://localhost:5000/api/properties");
+    const res = await axios.get("https://hotel-booking-app-do1i.onrender.com/api/properties");
     setProperties(res.data);
     setFilteredProperties(res.data);
   };

@@ -12,7 +12,7 @@ const MenuManagement = () => {
   // FETCH MENUS
   const fetchMenus = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/menus");
+      const res = await axios.get("https://hotel-booking-app-do1i.onrender.com/api/menus");
       setMenus(res.data);
     } catch (err) {
       console.error("Fetch menus error:", err);
@@ -31,7 +31,7 @@ const MenuManagement = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/menus", {
+      await axios.post("https://hotel-booking-app-do1i.onrender.com/api/menus", {
         title: menu.title,
         path: menu.path,
         order: Number(menu.order),
@@ -48,7 +48,7 @@ const MenuManagement = () => {
   // DELETE MENU
   const deleteMenu = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/menus/${id}`);
+      await axios.delete(`https://hotel-booking-app-do1i.onrender.com/api/menus/${id}`);
       fetchMenus();
     } catch (err) {
       console.error("Delete menu error:", err);

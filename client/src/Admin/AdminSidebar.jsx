@@ -7,7 +7,7 @@ const AdminSidebar = () => {
     const [menus, setMenus] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/menus")
+        axios.get("https://hotel-booking-app-do1i.onrender.com/api/menus")
             .then(res => setMenus(res.data));
     }, []);
 

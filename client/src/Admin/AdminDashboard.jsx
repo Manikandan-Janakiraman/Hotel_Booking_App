@@ -28,12 +28,12 @@ const AdminDashboard = () => {
       try {
         // Fetch properties
         const propertyRes = await axios.get(
-          "http://localhost:5000/api/properties"
+          "https://hotel-booking-app-do1i.onrender.com/api/properties"
         );
 
         // Fetch bookings
         const bookingRes = await axios.get(
-          "http://localhost:5000/api/bookings"
+          "https://hotel-booking-app-do1i.onrender.com/api/bookings"
         );
 
         const properties = propertyRes.data.length;

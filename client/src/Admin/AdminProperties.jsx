@@ -35,7 +35,7 @@ const AdminProperties = () => {
   };
 
   const fetchProperties = async () => {
-    const res = await axios.get("http://localhost:5000/api/properties");
+    const res = await axios.get("https://hotel-booking-app-do1i.onrender.com/api/properties");
     setProperties(res.data);
   };
 
@@ -84,7 +84,7 @@ const AdminProperties = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/properties",
+        "https://hotel-booking-app-do1i.onrender.com/api/properties",
         data,
         {
           headers: {
@@ -136,7 +136,7 @@ const AdminProperties = () => {
       }
 
       await axios.put(
-        `http://localhost:5000/api/properties/${selectedId}`,
+        `https://hotel-booking-app-do1i.onrender.com/api/properties/${selectedId}`,
         data,
         {
           headers: {
@@ -159,7 +159,7 @@ const AdminProperties = () => {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/properties/${selectedId}`
+        `https://hotel-booking-app-do1i.onrender.com/api/properties/${selectedId}`
       );
 
       showMessage("Property Deleted Successfully");
