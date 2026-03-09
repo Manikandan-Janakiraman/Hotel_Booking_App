@@ -25,7 +25,7 @@ app.use(express.json());
 // app.use(cors())
 
 app.use(cors({
-  origin: "https://hotel-booking-app-chi.vercel.app",
+  origin: "https://hotel-booking-app-2lg2.onrender.com",
   credentials: true
 }));
 
