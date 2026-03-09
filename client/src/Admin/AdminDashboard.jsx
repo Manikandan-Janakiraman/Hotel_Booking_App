@@ -28,12 +28,12 @@ const AdminDashboard = () => {
       try {
         // Fetch properties
         const propertyRes = await axios.get(
-          "https://hotel-booking-app-2lg2.onrender.com/api/properties"
+          "https://hotel-booking-app-chi.vercel.app/api/properties"
         );
 
         // Fetch bookings
         const bookingRes = await axios.get(
-          "https://hotel-booking-app-2lg2.onrender.com/api/bookings"
+          "https://hotel-booking-app-chi.vercel.app/api/bookings"
         );
 
         const properties = propertyRes.data.length;
