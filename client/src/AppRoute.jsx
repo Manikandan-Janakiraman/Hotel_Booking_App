@@ -88,9 +88,9 @@ const AppRoute = () => {
       </Route>
       
 
-      <Route path="/admin/dashboard" element={<ProtectedRoute> <AdminDashboard />
+      {/* <Route path="/admin/dashboard" element={<ProtectedRoute> <AdminDashboard />
       </ProtectedRoute>
-      } />
+      } /> */}
 
     </Routes>
 
