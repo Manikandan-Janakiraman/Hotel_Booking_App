@@ -42,7 +42,7 @@ const Dashboard = () => {
 
   /* ---------------- CRUD ---------------- */
   const handleAdd = async () => {
-    await axios.post("http://localhost:5000/api/properties", formData);
+    await axios.post("https://hotel-booking-app-do1i.onrender.com/api/properties", formData);
     fetchProperties();
     setFormData(initialState);
   };
@@ -50,7 +50,7 @@ const Dashboard = () => {
   const handleUpdate = async () => {
     if (!selectedId) return alert("Select a property to update");
     await axios.put(
-      `http://localhost:5000/api/properties/${selectedId}`,
+      `https://hotel-booking-app-do1i.onrender.com/api/properties/${selectedId}`,
       formData
     );
     fetchProperties();
@@ -59,7 +59,7 @@ const Dashboard = () => {
   const handleDelete = async () => {
     if (!selectedId) return alert("Select a property to delete");
     await axios.delete(
-      `http://localhost:5000/api/properties/${selectedId}`
+      `https://hotel-booking-app-do1i.onrender.com/api/properties/${selectedId}`
     );
     fetchProperties();
     setFormData(initialState);

@@ -136,7 +136,7 @@ const Properties = () => {
               <div className="w-full md:w-[40%]">
                 {p.image ? (
                   <img
-                    src={`http://localhost:5000/uploads/${p.image}`}
+                    src={`https://hotel-booking-app-do1i.onrender.com/uploads/${p.image}`}
                     alt={p.name}
                     className="w-full h-60 md:h-full object-cover"
                   />
