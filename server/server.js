@@ -34,11 +34,11 @@ connectDB();
     
 // ROUTES
 app.use("/api/auth", authRoutes);
-app.use("https://hotel-booking-app-2lg2.onrender.com/api/properties", propertyRoutes);
-app.use("https://hotel-booking-app-2lg2.onrender.com/api/menus", menuRoutes);
+app.use("/api/properties", propertyRoutes);
+app.use("api/menus", menuRoutes);
 
 
-app.use("https://hotel-booking-app-2lg2.onrender.com/api/bookings", bookingRoutes);
+app.use("/api/bookings", bookingRoutes);
 
 
 // app.use("/api/admin/adminprofile", administrator)
