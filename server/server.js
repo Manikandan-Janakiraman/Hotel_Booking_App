@@ -11,6 +11,9 @@ import bookingRoutes from "./routes/bookingRoutes.js"
 
 dotenv.config();
 
+// connect DB
+connectDB();
+
 const app = express();
 
 
@@ -29,8 +32,6 @@ app.use(cors({
   credentials: true
 }));
 
-// connect DB
-connectDB();
     
 // ROUTES
 app.use("/api/auth", authRoutes);
