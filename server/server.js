@@ -33,7 +33,7 @@ app.use(cors({
 connectDB();
     
 // ROUTES
-app.use("https://hotel-booking-app-2lg2.onrender.com/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use("https://hotel-booking-app-2lg2.onrender.com/api/properties", propertyRoutes);
 app.use("https://hotel-booking-app-2lg2.onrender.com/api/menus", menuRoutes);
 
@@ -44,7 +44,7 @@ app.use("https://hotel-booking-app-2lg2.onrender.com/api/bookings", bookingRoute
 // app.use("/api/admin/adminprofile", administrator)
 
 
-app.use("https://hotel-booking-app-2lg2.onrender.com/uploads", express.static("uploads"));
+app.use("/uploads", express.static("uploads"));
 
 
 
