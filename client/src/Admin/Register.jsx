@@ -106,10 +106,10 @@ const Register = ({ onRegisterSuccess }) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post(
-                "https://hotel-booking-app-2lg2.onrender.com/api/auth/register",
-                { name, email, password }
-            );
+       
+              const response = await axios.post("https://hotel-booking-app-2lg2.onrender.com/api/auth/register", { name, email, password });
+            alert(res.data.message);
+
 
             alert("Successfully Registered");
 

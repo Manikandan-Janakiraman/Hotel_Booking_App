@@ -108,13 +108,8 @@ const Login = () => {
 
         try {
             setLoading(true);
-
-            const res = await axios.post(
-                "https://hotel-booking-app-2lg2.onrender.com/api/auth/login",
-                { email, password }
-            );
-
-            alert(res.data.message); 
+            const res = await axios.post("https://hotel-booking-app-2lg2.onrender.com/api/auth/login", { email, password });
+            alert(res.data.message);
 
             // console.log("Logged in user:", res.data.user);
 
@@ -125,7 +120,7 @@ const Login = () => {
                 onLoginSuccess(res.data.user);
             }
 
-                
+
             navigate('/')
         } catch (error) {
             alert(

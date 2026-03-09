@@ -7,8 +7,6 @@ import propertyRoutes from "./routes/propertyRoutes.js";
 import menuRoutes from  "./routes/menuRoutes.js"
 import bookingRoutes from "./routes/bookingRoutes.js"
 
-
-
 dotenv.config();
 
 // connect DB
@@ -33,29 +31,21 @@ app.use(
     credentials: true
   })
 );
-
     
 // ROUTES
 app.use("/api/auth", authRoutes);
 app.use("/api/properties", propertyRoutes);
 app.use("api/menus", menuRoutes);
 
-
 app.use("/api/bookings", bookingRoutes);
-
 
 // app.use("/api/admin/adminprofile", administrator)
 
-
 app.use("/uploads", express.static("uploads"));
-
-
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("Server started");
 });
-
-
 
 app.get("/", (req, res) => {
   res.send("Hotel Booking API Running");
