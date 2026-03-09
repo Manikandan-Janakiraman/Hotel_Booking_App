@@ -35,7 +35,7 @@ const AdminProperties = () => {
   };
 
   const fetchProperties = async () => {
-    const res = await axios.get("https://hotel-booking-app-chi.vercel.app/api/properties");
+    const res = await axios.get("https://hotel-booking-app-2lg2.onrender.com/api/properties");
     setProperties(res.data);
   };
 
@@ -349,7 +349,7 @@ const AdminProperties = () => {
                   <div className="flex flex-col sm:flex-row gap-4">
 
                     <img
-                      src={`http://localhost:5000/uploads/${p.image}`}
+                      src={`https://hotel-booking-app-2lg2.onrender.com/uploads/${p.image}`}
                       alt=""
                       className="w-full sm:w-24 h-24 object-cover rounded-xl"
                     />
