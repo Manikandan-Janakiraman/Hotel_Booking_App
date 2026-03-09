@@ -16,7 +16,6 @@ connectDB();
 
 const app = express();
 
-
 // middleware
 app.use(express.json());
 
@@ -27,10 +26,13 @@ app.use(express.json());
 
 // app.use(cors())
 
-app.use(cors({
-  origin: "https://hotel-booking-app-chi.vercel.app",
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "https://hotel-booking-app-chi.vercel.app",
+    methods: ["GET","POST","PUT","DELETE"],
+    credentials: true
+  })
+);
 
     
 // ROUTES
