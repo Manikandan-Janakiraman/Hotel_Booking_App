@@ -380,7 +380,7 @@ const Booking = () => {
     }
 
     try {
-      await axios.post("https://hotel-booking-app-do1i.onrender.com/api/bookings", {
+      await axios.post("https://hotel-booking-app-2lg2.onrender.com/api/bookings", {
         ...formData,
         rooms,
         guests,

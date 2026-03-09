@@ -22,7 +22,7 @@ const Properties = () => {
   }, []);
 
   const fetchProperties = async () => {
-    const res = await axios.get("https://hotel-booking-app-do1i.onrender.com/api/properties");
+    const res = await axios.get("https://hotel-booking-app-2lg2.onrender.com/api/properties");
     setProperties(res.data);
     setFilteredProperties(res.data);
   };
@@ -136,7 +136,7 @@ const Properties = () => {
               <div className="w-full md:w-[40%]">
                 {p.image ? (
                   <img
-                    src={`https://hotel-booking-app-do1i.onrender.com/uploads/${p.image}`}
+                    src={`https://hotel-booking-app-2lg2.onrender.com/uploads/${p.image}`}
                     alt={p.name}
                     className="w-full h-60 md:h-full object-cover"
                   />

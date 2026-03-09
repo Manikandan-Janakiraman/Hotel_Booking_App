@@ -107,7 +107,7 @@ const Register = ({ onRegisterSuccess }) => {
 
         try {
             const response = await axios.post(
-                "https://hotel-booking-app-do1i.onrender.com/api/auth/register",
+                "https://hotel-booking-app-2lg2.onrender.com/api/auth/register",
                 { name, email, password }
             );
 
